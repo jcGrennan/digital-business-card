@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 /* followed a figma design file for the styling */
@@ -14,25 +13,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #23252C;
+    background-color: #23252C;
     overflow-y: auto;
 }
 
 .card {
     max-width: 50%;
+    max-height: 90%; 
     color: #FFFFFF;
     font-family: "Inter", sans-serif;
-    background: #1A1B21;
-    border-radius: 10px 10px 10px 10px;
-    margin: 10%;
 }
 
 .info {
+    background: #1A1B21;
     max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px 10px 0px 0px;
 }
+
 .info--profile {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
@@ -77,8 +77,9 @@ in multiple places from here on */
 }
 
 .about, .interests {
-    width: min(max(37.5vw), 300px);
-    margin: 0 12.5%
+    background: #1A1B21;
+    max-width: 400px;
+    padding: 0 12.5% 7.5%
 }
 
 .about > h2, .interests > h2 {
@@ -88,19 +89,32 @@ in multiple places from here on */
 
 .about > p, .interests > p {
     font-size: min(max(1.8vw), 12px);
-    margin-bottom: 25px;
+}
+
+/* made a container for the footer so I
+ could make an empty div under the footer so 
+ there would be a gap between the card and the
+ end of the viewport. */
+
+.footer-container {
+    height: 8.5%;
 }
 
 .footer {
     background: #161619;
+    max-width: 400px;
     border-radius: 0 0 10px 10px;
-    height: 8.5%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px
+    gap: 25px;
 }
 
 .footer > a > img {
     width: min(max(4.5vw), 30px);
+}
+
+.fullscreen-padding {
+    height: 30px;
 }
