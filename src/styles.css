@@ -19,6 +19,8 @@
 
 .card {
     max-width: 50%;
+    /* put a max-height on the card to stop it
+    bleeding over the top of the viewport when fullscreen */
     max-height: 90%; 
     color: #FFFFFF;
     font-family: "Inter", sans-serif;
