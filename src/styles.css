@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+/* followed a figma design file for the styling */
+
+/* using flexbox to keep the card centered */
 #root {
     height: 100vh;
     width: 100vw;
@@ -35,6 +38,10 @@
     border-radius: 10px 10px 0px 0px;
     margin-bottom: 20px;
 }
+
+/* using min() and max() mehtods to scale
+the content as the viewport grows and shrinks 
+in multiple places from here on */
 
 .info--name {
     font-size: min(max(4vw),30px);

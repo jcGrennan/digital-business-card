@@ -1,3 +1,5 @@
+// composing and exporting the About component
+
 export default function About() {
     return (
         <div className="about">
