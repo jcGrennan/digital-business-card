@@ -31,7 +31,6 @@
     align-items: center;
 }
 .info--profile {
-    top: 100px;
     width: 100%;
     border-radius: 10px 10px 0px 0px;
     margin-bottom: 20px;
@@ -84,4 +83,18 @@
 .about > p, .interests > p {
     font-size: min(max(1.8vw), 12px);
     margin-bottom: 25px;
+}
+
+.footer {
+    background: #161619;
+    border-radius: 0 0 10px 10px;
+    height: 8.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px
+}
+
+.footer > img  {
+    width: min(max(4.5vw), 30px);
 }
