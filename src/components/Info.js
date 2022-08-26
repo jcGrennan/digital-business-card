@@ -1,11 +1,9 @@
 // importing my profile image from the images folder
-
 import profile from "../images/profile.jpeg"
 import email from "../images/Email.png"
 
 /* composing and exporting the Info component 
 inside a function component with JSX */
-
 export default function Info() {
     return (
         <div className="info">
