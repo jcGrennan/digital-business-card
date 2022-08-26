@@ -10,10 +10,10 @@ export default function Footer() {
     return (
         <div className="footer-container">
             <div className="footer">
-                <a href="https://github.com/jcGrennan" >
+                <a href="https://github.com/jcGrennan" target="_blank" rel="noreferrer">
                     <img src={gitHub} alt="GitHub link" />
                 </a>
-                <a href="https://www.linkedin.com/in/jc-grennan">
+                <a href="https://www.linkedin.com/in/jc-grennan" target="_blank" rel="noreferrer">
                     <img src={linkedIn} alt="Linkedin link" />
                 </a>
             </div>
